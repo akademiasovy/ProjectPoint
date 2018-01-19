@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by host on 17.1.2018.
  */
-public class Point {
+public class Point implements Geometry {
 
     private int x;
     private int y;
@@ -60,9 +60,18 @@ public class Point {
         return Math.sqrt(Math.pow(x-other.getX(),2)+Math.pow(y-other.getY(),2));
     }
 
+    public void doAxialSymmetry(char type){
+        if(type=='x' || type=='X')
+            y=-y;
+        else if(type=='y' || type=='Y')
+            x=-x;
+    }
 
+    public void doCentralSymmetry(){
+        x=-x;
+        y=-y;
+    }
 
-    
 
 
 
