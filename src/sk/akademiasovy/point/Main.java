@@ -43,5 +43,19 @@ public class Main {
             ((Point3D)g).print();
         }
 
+        Point bod15=new Point(2,5);
+
+        Line line1=new Line(bod15, new Point(10,4));
+        Line line2=new Line(1,3,4,6);
+
+        System.out.println("Length of line1 is "+line1.getLength());
+        System.out.println("Middle point of line2 is: ");
+        line2.getMiddlePointOfLine().print();
+
+        Triangle t1=new Triangle(new Point(3,3), new Point(4,7), new Point(5,3));
+        if(t1.isIsosceles()){
+            System.out.println("Triangle t1 is isosceles!");
+        }
+
     }
 }
