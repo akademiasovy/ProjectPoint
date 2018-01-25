@@ -1,5 +1,8 @@
 package sk.akademiasovy.point;
 
+import sk.akademiasovy.date.MyDate;
+import sk.akademiasovy.other.MyClass;
+
 /**
  * Created by host on 17.1.2018.
  */
@@ -57,5 +60,15 @@ public class Main {
             System.out.println("Triangle t1 is isosceles!");
         }
 
+        MyDate myDate=new MyDate();
+        myDate.today();
+        myDate.today2();
+
+        MyClass myClass=new MyClass();
+        System.out.println(myClass.isEmailValid("janko@hrasko"));
+        System.out.println(myClass.isEmailValid("janko!5@hrasko"));
+        System.out.println(myClass.isEmailValid("janko.novak5@hrasko"));
+        System.out.println(myClass.isEmailValid("janko novak5@hrasko"));
+        System.out.println(myClass.isEmailValid("janko@hrasko@azet.sk"));
     }
 }
