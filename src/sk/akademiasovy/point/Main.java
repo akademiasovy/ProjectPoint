@@ -70,5 +70,11 @@ public class Main {
         System.out.println(myClass.isEmailValid("janko.novak5@hrasko"));
         System.out.println(myClass.isEmailValid("janko novak5@hrasko"));
         System.out.println(myClass.isEmailValid("janko@hrasko@azet.sk"));
+
+        System.out.println(myClass.getGender("9512157456"));
+        System.out.println(myClass.getGender("951215/7456"));
+        System.out.println(myClass.getGender("95121574"));
+        System.out.println(myClass.getGender("9572157456"));
+        System.out.println(myClass.getGender("ab1cde/////"));
     }
 }
